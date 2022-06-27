@@ -1,0 +1,279 @@
+*{margin:0; padding:0;}
+ul{list-style: none;}
+html, body, .slides{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slides{
+    position: relative;
+    overflow: hidden;
+}
+.slides .notice{
+    position: absolute;
+    top:70px; left: 35px;
+    z-index: 10;
+}
+.slides .notice img{
+    width: 180px;
+    height: 50px;
+}
+.slides .part{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.slides .part1{
+    position: absolute!important;
+    top:0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(home_webdesign_slide1_bg.jpg);
+    background-size: cover;
+    background-position: center center; 
+    /* cho ảnh nền ở giữa */
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+    opacity: 0;
+    visibility: hidden;
+    /* transition-delay: 0.5s!important; */
+    transition: 0.4s;
+}
+.slides .part2{
+    background-image: url(home_webdesign_slide3_bg.jpg)!important;
+    /* cho ảnh nền ở giữa */
+    overflow: hidden;
+    z-index: -3;
+}
+.slides .part3{
+    background-image: url(home_webdesign_slide4_bg.jpg)!important;
+    z-index: -3;
+}
+.slides .part1::after{
+    content: "";
+    position: absolute;
+    left: -1025px;  bottom: 0px;
+    width: 0;
+    height: 0;
+    border: 1000px solid #ffffff00;
+    border-bottom-color: #1d415fcb;
+    z-index: 1;
+    opacity: 0;
+}
+.slides .part2::after{
+    border-bottom-color: #7e705ccb!important;
+}
+.slides .part3::after{
+    border-bottom-color: #af2e2fcb!important;
+}
+.slides .change1::after{
+    animation: xuathien1 8s ease forwards;
+    animation-delay: 1.2s;
+}
+.slides .part1::before{
+    content: "";
+    position: absolute;
+    left: -800px;  bottom: 0px;
+    width: 0;
+    height: 0;
+    border: 1000px solid #ffffff00;
+    border-bottom-color: #1d415fcb;
+    z-index: 2;
+    opacity: 0;
+}
+.slides .part2::before{
+    border-bottom-color: #7e705ccb!important;
+}
+.slides .part3::before{
+    border-bottom-color: #af2e2fcb!important;
+}
+.slides .change1::before{
+    animation: xuathien1 8s ease forwards;
+    animation-delay: 1s;
+    /* animation-timing-function: steps(1,end); */
+}
+@-webkit-keyframes xuathien1{
+    0%{transform: translateX(-1200px) skewX(-10deg); opacity: 1;}
+    50%{transform: translateX(0) skewX(-10deg);opacity: 1;}
+    100%{transform: translateX(-1200px) skewX(-10deg); opacity: 1;}
+}
+.slides .part1 .tg3{
+    position: absolute;
+    top:0;
+    right: -350px;
+    width: 0;
+    height: 0;
+    border: 300px solid #ffffff00;
+    border-top-color: #1d415fcb;
+    z-index: 1;
+    transition: 0.8s;
+    opacity: 0;
+}
+.slides .part2 .tg3{
+    border-top-color:#7e705ccb!important;
+}
+.slides .part3 .tg3{
+    border-top-color:#c94545!important;
+}
+.slides .change1 .tg3{
+    animation: xuathien2 8s ease forwards;
+    animation-delay: 1s;
+}
+@-webkit-keyframes xuathien2{
+    0%{transform: translateX(600px) skewX(-10deg); opacity: 1;}
+    50%{transform: translateX(0) skewX(-10deg); opacity: 1;
+    }
+    100%{transform: translateX(600px) skewX(-10deg); opacity: 1;}
+}
+.slides .part1 .content {
+    position: absolute;
+    z-index: 10;
+    top:200px; left: 100px;
+    width: 300px;
+    color: #fff;
+    transition: 0.4s;
+    z-index:10;
+}
+.slides .part1 .content .no1{
+    font-size: 80px;
+    opacity: 0;
+    transition: 1s;
+}
+.slides .change1 .content .no1{
+    animation: xuathien3 4s ease forwards;
+    animation-delay: 2s;
+}
+.slides .part1 .content .no2{
+    opacity: 0;
+    font-size: 45px;
+    font-weight: bold;
+    transition: 1s;
+}
+.slides .change1 .content .no2{
+    animation: xuathien3 4s ease forwards;
+    animation-delay: 2.2s;
+}
+.slides .part1 .content .no3{
+    opacity: 0;
+    margin: 25px 0px 28px 0px;
+    width: 85px;
+    border-bottom: 3.5px solid #fff;
+    transition: 1s;
+}
+.slides .change1 .content .no3{
+    animation: xuathien3 4s ease forwards;
+    animation-delay: 2.4s;
+}
+.slides .part1 .content .no4{
+    opacity: 0;
+    font-size: 10px;
+    transition: 1s;
+}
+.slides .change1 .content .no4{
+    animation: xuathien3 4s ease forwards;
+    animation-delay: 2.6s;
+}
+.slides .part1 .content .no5{
+    opacity: 0;
+    margin-top: 40px;
+    border: 3.5px solid #fff;
+    text-align: center;
+    padding:9px 10px 10px 10px;
+    width: 110px;
+    font-size: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slides .change1 .content .no5{
+    animation: xuathien3 4s ease forwards;
+    animation-delay: 2.8s;
+}
+@-webkit-keyframes xuathien3{
+    0%{transform: translateX(-50px); opacity: 0;visibility: hidden;}
+    50%{transform: translateX(0); opacity: 1; visibility: visible;}
+    100%{transform: translateX(-50px); opacity: 0;visibility: hidden;}
+}
+.slides .part1 .content .no5:hover{
+    background-color: #012441;
+}
+.slides .part2 .content .no5:hover{
+    background-color: #574225;
+}
+.slides .part3 .content .no5:hover{
+    background-color: #e7042a;
+}
+::-webkit-scrollbar{
+    background-color: grey;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: black;
+    border-radius: 6px;
+}
+.changeslide{
+    position: relative;
+    bottom: 40px;
+    left: 3%;
+    z-index: 10;
+}
+.changeslide ul{
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+.changeslide ul li{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    border: 2px solid #ffffff00;
+}
+.changeslide ul li::before{
+    content: "";
+    position: absolute;
+    top:-1.5px; left:-2.1px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    opacity: 0;
+}
+.changeslide ul li.no1::before{
+    left:-2px!important;
+}
+.changeslide ul li.no2::before {
+    left: -1.8px!important;
+}
+.changeslide ul li:hover::before, .change::before{
+    opacity: 1!important;
+}
+.changeslide ul li:hover, .change{
+    background-color: #ffffff00!important;
+}
+.changeslide ul li div{
+    position: absolute;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 50%;
+    transition: 0.4s;
+    box-sizing: border-box;
+    background-color: grey;
+    transform-origin: 50% 50%;
+}
+.changeslide ul li:hover div, .change div{
+    background-color: #ffffff!important;
+    transform: scale(0.4)!important;
+}
+.change1{
+    z-index: 1!important;
+    transition: 0.4s!important; 
+    opacity: 1!important;
+    visibility: visible!important;
+}

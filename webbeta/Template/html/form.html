@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RESTAURANT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/cd61514c90.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Charm:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="top">
+      <div class="content col-10 mx-auto text-white d-flex justify-content-between">
+        <div class="left">
+          Chào mừng đến với Restaurent!
+        </div>
+        <div class="d-flex right" style="font-weight: bold;">
+          <a href="#" data-toggle="tooltip" title="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" data-toggle="tooltip" title="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" data-toggle="tooltip" title="Follow on Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" data-toggle="tooltip" title="Send us an email"><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end header-top -->
+    <div class="bottom">
+      <div class="col-10 mx-auto d-flex justify-content-between" style="height: 100%;">
+        <button class="btn"><i class="fas fa-bars"></i></button>
+        <a href="#"><img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/09/logo1.jpg"
+            alt="" class="left"></a>
+        <div class="right">
+          <ul class="nav" style="height: 100%;">
+            <li class="nav-item">
+              <a class="nav-link  text-secondary actived" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-secondary" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-secondary" href="#">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-secondary" href="#">Thực đơn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-secondary" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item no" style="height:41px">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+              <div class="content container">
+                <input type="text" placeholder="Tìm kiếm...">
+                <a href="#"><i class="fas fa-search"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end header-bottom -->
+    <div class="cover col-12">
+    </div>
+    <!-- end cover -->
+    <div class="menuhide">
+      <ul>
+        <li class="d-flex no" style="padding-bottom: 6%;">
+          <input type="text" placeholder="Tìm kiếm...">
+          <a href="#" class="no1 no" style="border: 1px solid #7e4c2b;"><i class="fas fa-search"></i></a>
+        </li>
+        <li class="no"><a href="#">Trang chủ</a></li>
+        <li class="no"><a href="#">Giới thiệu</a></li>
+        <li class="no"><a href="#">Tin tức</a></li>
+        <li class="no"><a href="#">Thực đơn</a></li>
+        <li class="no"><a href="#">Liên hệ</a></li>
+        <li class="no" style="border: none;">
+          <div class="d-flex right" style="font-weight: bold;">
+            <a href="#" data-toggle="tooltip" title="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" data-toggle="tooltip" title="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" data-toggle="tooltip" title="Follow on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" data-toggle="tooltip" title="Send us an email"><i class="far fa-envelope"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- end menuhide -->
+    <button type="button" class="close text-secondary" data-dismiss="alert">&times;</button>
+    <!-- end buttonclose -->
+  </header>
+  <!-- end header -->
+  <main id="main">
+    <div class="main1-slide">
+      <div id="ss" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" style="z-index: 1;">
+          <li data-target="#ss" data-slide-to="0" class="active"></li>
+          <li data-target="#ss" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img
+              src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/slider2-1024x683.jpg"
+              alt="First slide">
+            <div class="text text-inner text-center text-white">
+              <h2><strong>GRAND RESTAURENT</strong></h2>
+              <p>Making The Delicious Premium Food Since 1990</p>
+              <p>Book Online Or Call (1800)456-6743</p>
+            </div>
+          </div>
+          <div class="carousel-item special">
+            <img
+              src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/slider1-1024x683.jpg"
+              alt="Second slide">
+            <div class="text text-inner text-center text-white" style="text-align: left!important;">
+              <h2><strong>GRAND RESTAURENT</strong></h2>
+              <p><span>Making The Delicious Premium Food Since 1990</span></p>
+              <p><span>Book Online Or Call (1800)456-6743 </span></p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#ss" role="button" data-slide="prev">
+            <span class="sr-only"><i class="fas fa-chevron-left"></i></span>
+          </a>
+          <a class="carousel-control-next" href="#ss" role="button" data-slide="next">
+            <span class="sr-only"><i class="fas fa-chevron-right"></i></span>
+          </a>
+        </div>
+      </div>
+      <!-- end main1 -->
+      <div class="main2-banner col-12">
+        <div class="content col-10 d-flex mx-auto">
+          <div class="left col-6">
+            <div class="discover">
+              Discover
+            </div>
+            <h2>OUR STORY</h2>
+            <p style="font-size: 15px; width:95%;">Ultrices vitae auctor eu augue. Pellentesque dignissim enim sit a
+              venenatis. Vulputate enim nulla aliquet
+              porttitor lacus luctus. Dictumst quisq sagittis purus sit a. Praesent elementum facilisis leo vel fring
+              amet
+              est placerat. Aliquam etiam erat velit scelerisq donec pretium vulputate sapien nec sagittis aliquam
+              malesuada.</p>
+            <p style="margin-top: 20px;"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/about-story.png"
+                alt="" style="max-width: 100%;"></p>
+          </div>
+          <div class="right col-6">
+            <img
+              src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/hp-5-story-1024x724.jpg"
+              alt="" class="col-12" style="padding: 0;">
+          </div>
+        </div>
+      </div>
+      <!-- end main2 -->
+      <div class="main3-listitem1 col-10 mx-auto">
+        <div class="header col-12 ">
+          <div class="discover text-center">
+            Discover
+          </div>
+          <h2 class="text-center">OUR MENU</h2>
+          <div class="thanhngang mx-auto">thanhngang</div>
+        </div>
+
+        <div class="content-items col-12 d-flex">
+          <div class="part col-4">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-1.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box">
+              <h3><b>STARTER</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+          <div class="part col-4">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-2.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box ">
+              <h3><b>LUNCH</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+          <div class="part col-4">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-3.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box">
+              <h3><b>STARTER</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+          <div class="part col-6">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-4.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box">
+              <h3 style=><b>DINNER</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-5.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box">
+              <h3><b>FOOD</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="image"><img
+                src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/menu-v2-6.jpg"
+                alt="" class="col-12"></div>
+
+            <div class="box">
+              <h3><b>DRINK</b></h3>
+              <span>Image Box text</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- end main3 -->
+      <div class="main4-banner col-12 mx-auto">
+        <div class="parallax-window" data-parallax="scroll"
+          data-image-src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/italian-food-background-1.jpg">
+        </div>
+        <div class="text dark">
+          <div class="text-inner text-center text-white">
+
+            <h2><b>Ready to be opened</b></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.</p>
+            <a class="button">
+              <span><b>ĐẶT BÀN NGAY</b></span>
+              <i class="far fa-clock"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end main4 -->
+      <div class="main5-listitem2 col-10 mx-auto">
+        <div class="header col-12 ">
+          <div class="discover text-center">
+            Discover
+          </div>
+          <h2 class="text-center">OUR GALARY</h2>
+          <div class="thanhngang mx-auto">thanhngang</div>
+        </div>
+
+        <div class="content-items col-12 d-flex">
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/11-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/10-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/9-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/8-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/7-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/6-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/5-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="part col-3">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/4-300x300.jpg"
+                  alt="" class="col-12"></div>
+
+              <div class="box">
+                <div class="text-secondary">THỰC ĐƠN</div>
+                <span><b>Gà Đông Tảo hầm sả</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer text-center text-white">
+          <a class="btn">
+            <span><b>Xem tất cả</b></span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- end main5 -->
+      <div class="main6-input col-12">
+        <div class="content col-10 d-flex mx-auto">
+          <div class="left col-6" style="padding: 0;">
+            <img
+              src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/3250_1a_c_photography_restaurants___food_port_13_2.jpg"
+              alt="" class="col-12" style="padding: 0;">
+          </div>
+          <div class="right col-6 bg-white text-center text-dark">
+            <span><b>ĐẶT BÀN</b></span>
+            <div class="input">
+              <input type="text" class="col-5" placeholder="Họ và tên">
+              <input type="tel" class="col-5" placeholder="Số điện thoại">
+              <textarea name="" id="" cols="40" rows="10" class="col-12"
+                placeholder="Địa chỉ và nội dung..."></textarea>
+              <input type="submit" class="btn" value="GỬI">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end main6 -->
+      <div class="main7-listitem3 col-10 mx-auto">
+        <div class="header col-12 ">
+          <div class="discover text-center">
+            Discover
+          </div>
+          <h2 class="text-center">KHÁM PHÁ CUỘC SỐNG</h2>
+        </div>
+
+        <div class="content-items col-12 d-flex">
+          <div class="part col-4">
+            <div class="content-item" style="width: 100%;">
+              <div class="image" style="width: 100%;">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/t6.jpg" alt=""
+                  class="col-12">
+                  <div class="badge text-white">
+                      <div style="font-size: 18px;">30</div>
+                      <span>Th8</span>
+                    </div></div>
+
+              <div class="box">
+                <span><b>30 món ăn ngon tự nấu tại nhà, thay đổi mỗi ngày sẽ không bị ngán!</b></span>
+                <div class="text-secondary">Cá lóc loài cá này rất lành tính và thường được chế biến thành nhiều [...]
+                </div>
+                <button class="btn text-white"><b>XEM TIẾP</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="part col-4">
+            <div class="content-item">
+              <div class="image">
+                <img src="http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/t4.jpg" alt=""
+                  class="col-12">
+                  <div class="badge text-white">
+                      <div style="font-size: 18px;">30</div>
+                      <span>Th8</span>
+                    </div></div>
+
+              <div class="box">
+                <span><b> Các món ăn ngon từ cua biển Cà Mau
+                  </b></span>
+                <div class="text-secondary">Cá lóc loài cá này rất lành tính và thường được chế biến thành nhiều [...]
+                </div>
+                <button class="btn text-white"><b>XEM TIẾP</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="part col-4">
+            <div class="content-item">
+              <div class="image">
+                <img src="t5.jpg" alt=""
+                  class="col-12">
+                <div class="badge text-white">
+                  <div style="font-size: 18px;">30</div>
+                  <span>Th8</span>
+                </div>
+              </div>
+
+              <div class="box">
+                <span><b>Gợi ý những món ăn sáng “ăn hoài không chán” khi lang thang Sài Gòn</b></span>
+                <div class="text-secondary">Cá lóc loài cá này rất lành tính và thường được chế biến thành nhiều [...]
+                </div>
+                <button class="btn text-white"><b>XEM TIẾP</b></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end main7 -->
+  </main>
+  <!-- end main -->
+  <footer id="footer">
+    <div class="top col-12 text-white">
+      <div class="top-content col-10 mx-auto d-flex">
+        <div class="part col-4">
+          <div class="title"><b>VỀ CHÚNG TÔI</b></div>
+          <div class="thanhngang">thanhngang</div>
+          <div class="content">Website chính thức của nhà hàng Aunt Daisy’s, website có nhiệm vụ giới thiệu về hệ thống
+            Aunt Daisy’s, cập nhật tin tức thường xuyên, cung cấp thông tin mới chính xác nhất về các chương trình ưu
+            đãi đã, đang và sẽ áp dụng tại từng nhà hàng trong hệ thống.</div> <br>
+        </div>
+        <div class="part col-4">
+          <div class="title"><b>HỖ TRỢ KHÁCH HÀNG</b> </div>
+          <div class="thanhngang">thanhngang</div>
+          <div class="content">
+            <ul>
+              <li><a href="#" class="text-white">Về chúng tôi</a></li>
+              <li><a href="#" class="text-white">Điều khoản sử dụng</a></li>
+              <li><a href="#" class="text-white">Chính sách bảo mật</a></li>
+              <li><a href="#" class="text-white">Tin tức</a></li>
+              <li><a href="#" class="text-white" style="border-bottom: none;">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="part col-4">
+          <div class="title"><b>THÔNG TIN LIÊN HỆ</b></div>
+          <div class="thanhngang">thanhngang</div>
+          <div class="content">
+            <p>Địa chỉ: 627 Vũ Tông Phan, Thanh Xuân, Hà Nội</p>
+            <p>Hotline đặt tiệc: 0962.9797.00</p>
+            <p>Khiếu nại dịch vụ: 0962.9797.00</p>
+            <p>Giờ làm việc: 24/7</p>
+            <p>Email: web@vietevo.com</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end footer-top -->
+    <div class="bottom col-12 bg-secondary">
+      <div class="content col-10 mx-auto">
+        <span>Copyright 2019 © <b>Thiết kế website Beta Vietnam</b></span>
+      </div>
+
+    </div>
+    <!-- end footer-bottom -->
+    <a href="#" class="back-to-top button active" id="top-link">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- end footer-backtop -->
+  </footer>
+  <!-- end footer -->
+  <script type="text/javascript" src="../js/form.js"></script>
+</body>
+
+</html>
